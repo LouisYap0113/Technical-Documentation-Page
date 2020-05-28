@@ -4,19 +4,92 @@
         <style>
             /*This webpage is designed for large screen-sized device (desktops,laptops)*/
             html {
-                    font-size:10px;
+                    font-size:12px;
                  }
+
+            @media (max-width:1080px) {
+                                        html {font-size:10px;}
+                                      }
+
+            body {
+                    font-size:1.8rem;
+                 }
+
+            #navbar {
+                        position:fixed;
+                        top:0;
+                        left:0;
+                        border-right:solid;
+                        width:30rem;
+                        height:100%;
+                        padding-top:1rem;
+                    }
+
+            #navbar header {
+                            font-size:3rem;
+                            text-align:center;
+                            padding-bottom:0.5rem;
+                            border-bottom:solid;
+                            font-family:"monotype corsiva";
+                           }
+
+            #navbar p {
+                        border-bottom:0.1rem solid;
+                        margin:0;
+                        padding-top:0.5rem;
+                        padding-bottom:0.5rem;
+                      }
+
             .nav-link   {
                             text-decoration: none;
                             color:black;
+                            font-size:2.5rem;
+                            margin-left:2rem;
+                            font-style: italic;
+                            text-transform: capitalize;
                         }
 
             .nav-link:hover {
                                 font-weight: bold;
-                                color: red;
+                                color: blue;
                             }
 
-            .main-section {}
+            #main-doc {
+                        margin-left:32rem;
+                        padding-top:0.5rem;
+                      }
+
+            #main-doc header {
+                                font-size:2.5rem;
+                                text-transform:capitalize;
+                                font-weight:bold;
+                                margin-bottom:0.8rem;
+                             }
+
+            #main-doc p {
+                            padding-left:3rem;
+                            margin-top:0;
+                            margin-bottom:0;
+                        }
+
+            #main-doc ul {
+                            padding-left:7rem;
+                            margin:0;
+                         }
+
+            .main-section {
+                            margin-bottom:2rem;
+                          }
+
+            code {
+                    display:block;
+                    background-color: #f7f7f7;
+                    line-height:1.6;
+                    font-size:1.2rem;
+                    margin-left:5rem;
+                    margin-top:0.5rem;
+                    border-radius:8px;
+                 }
 
             .code_p {
                         margin-top:0;
@@ -27,7 +100,28 @@
                             display:inline-block;
                         }
 
+            #Reference {
+                            padding-bottom:270px;
+                       }
 
+            #Reference a {
+                            font-style: italic;
+                         }
+
+            #Reference a:hover {
+                                    color:red;
+                                    font-weight:bold;
+                               }
+
+            h4 {
+                margin:0;
+                text-align:center;
+               }
+
+            hr {
+                margin-top:0;
+                margin-bottom:270px;
+               }
 
             /*Code below is for the results part*/
             #result1_1 {color:red;}
@@ -42,35 +136,6 @@
             #result5_2 {text-transform: uppercase;}
             #result5_3 {text-transform: capitalize;}
             /*Code above is for the results part*/
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
         </style>
 
         <nav id="navbar">
@@ -90,6 +155,7 @@
             <section id="Introduction" class="main-section">
                 <header>Introduction</header>
                 <p>Today, we are going to learn some basic CSS style properties which can be used to make your text more interesting.</p>
+                <br>
                 <p>These style properties include:</p>
                 <ul>
                     <li><em>color</em></li>
@@ -102,13 +168,15 @@
 
             <section id="color" class="main-section">
                 <header>color</header>
-                <p>When we want to change the color of the text, we could use this style property: <em>color</em>.</p>
+                <p>When we want to change the color of the text, we could use this style property: <strong><em>color</em></strong>.</p>
+                <br>
                 <p>1st example:</p>
                 <code>
                     <p class="code_p">color: red</p>
                     <p class="code_p result_sum">Result:</p>
                     <p id="result1_1" class="code_p result_sum">Hello World</p>
                 </code>
+                <br>
                 <p>2nd example:</p>
                 <code>
                     <p class="code_p">color: blue</p>
@@ -119,13 +187,15 @@
             
             <section id="font-size" class="main-section">
                 <header>font-size</header>
-                <p>When we want to change the size of the text, we could use this style property: <em>font-size</em>.</p>
+                <p>When we want to change the size of the text, we could use this style property: <strong><em>font-size</em></strong>.</p>
+                <br>
                 <p>1st example:</p>
                 <code>
                     <p class="code_p">font-size: 15px</p>
                     <p class="code_p result_sum">Result:</p>
                     <p id="result2_1" class="code_p result_sum">Hello World</p>
                 </code>
+                <br>
                 <p>2nd example:</p>
                 <code>
                     <p class="code_p">font-size: 25px</p>
@@ -136,13 +206,15 @@
 
             <section id="font-family" class="main-section">
                 <header>font-family</header>
-                <p>When we want to change the font for the text, we could use this style property: <em>font-family</em>.</p>
+                <p>When we want to change the font for the text, we could use this style property: <strong><em>font-family</em></strong>.</p>
+                <br>
                 <p>1st example:</p>
                 <code>
                     <p class="code_p">font-family: monotype corsiva</p>
                     <p class="code_p result_sum">Result:</p>
                     <p id="result3_1" class="code_p result_sum">Hello World</p>
                 </code>
+                <br>
                 <p>2nd example:</p>
                 <code>
                     <p class="code_p">font-family: forte</p>
@@ -153,13 +225,15 @@
 
             <section id="font-weight" class="main-section">
                 <header>font-weight</header>
-                <p>When we want to make the text looks bold, we could use this style property: <em>font-weight</em>.</p>
+                <p>When we want to make the text looks bold, we could use this style property: <strong><em>font-weight</em></strong>.</p>
+                <br>
                 <p>1st example:</p>
                 <code>
                     <p class="code_p">font-weight: 300</p>
                     <p class="code_p result_sum">Result:</p>
                     <p id="result4_1" class="code_p result_sum">Hello World</p>
                 </code>
+                <br>
                 <p>2nd example:</p>
                 <code>
                     <p class="code_p">font-weight: 900</p>
@@ -170,19 +244,22 @@
 
             <section id="text-transform" class="main-section">
                 <header>text-transform</header>
-                <p>When we want to change the appearance of the text, we could use this style property: <em>text-transform</em>.</p>
+                <p>When we want to change the appearance of the text, we could use this style property: <strong><em>text-transform</em></strong>.</p>
+                <br>
                 <p>1st example:</p>
                 <code>
                     <p class="code_p">text-transform: lowercase</p>
                     <p class="code_p result_sum">Result:</p>
                     <p id="result5_1" class="code_p result_sum">Hello World</p>
                 </code>
+                <br>
                 <p>2nd example:</p>
                 <code>
                     <p class="code_p">text-transform: uppercase</p>
                     <p class="code_p result_sum">Result:</p>
                     <p id="result5_2" class="code_p result_sum">Hello World</p>
                 </code>
+                <br>
                 <p>3rd example:</p>
                 <code>
                     <p class="code_p">text-transform: capitalize</p>
@@ -195,6 +272,10 @@
                 <header>Reference</header>
                 <p>All the information in this page is taken from <a href="https://www.freecodecamp.org/learn/" target="_blank">here</a>.</p>
             </section>
+
+            <h4>END</h4>
+
+            <hr>
         </main>
     </body>
 </html>
