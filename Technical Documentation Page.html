@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            /*This webpage is designed for large screen-sized device (desktops,laptops)*/
+            html {
+                    font-size:10px;
+                 }
+            .nav-link   {
+                            text-decoration: none;
+                            color:black;
+                        }
+
+            .nav-link:hover {
+                                font-weight: bold;
+                                color: red;
+                            }
+
+            .main-section {}
+
+            .code_p {
+                        margin-top:0;
+                        margin-bottom:0;
+                    }
+
+            .result_sum {
+                            display:inline-block;
+                        }
+
+
+
+            /*Code below is for the results part*/
+            #result1_1 {color:red;}
+            #result1_2 {color:blue;}
+            #result2_1 {font-size:15px;}
+            #result2_2 {font-size:25px;}
+            #result3_1 {font-family: "monotype corsiva";}
+            #result3_2 {font-family: forte;}
+            #result4_1 {font-weight:300;}
+            #result4_2 {font-weight:900;}
+            #result5_1 {text-transform: lowercase;}
+            #result5_2 {text-transform: uppercase;}
+            #result5_3 {text-transform: capitalize;}
+            /*Code above is for the results part*/
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        </style>
+
+        <nav id="navbar">
+            <header>CSS Style Property</header>
+            <section>
+                <p><a class="nav-link" href="#Introduction">Introduction</a></p>
+                <p><a class="nav-link" href="#color">color</a></p>
+                <p><a class="nav-link" href="#font-size">font-size</a></p>
+                <p><a class="nav-link" href="#font-family">font-family</a></p>
+                <p><a class="nav-link" href="#font-weight">font-weight</a></p>
+                <p><a class="nav-link" href="#text-transform">text-transform</a></p>
+                <p><a class="nav-link" href="#Reference">Reference</a></p>
+            </section>
+        </nav>
+
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>Introduction</header>
+                <p>Today, we are going to learn some basic CSS style properties which can be used to make your text more interesting.</p>
+                <p>These style properties include:</p>
+                <ul>
+                    <li><em>color</em></li>
+                    <li><em>font-size</em></li>
+                    <li><em>font-family</em></li>
+                    <li><em>font-weight</em></li>
+                    <li><em>text-transform</em></li>
+                </ul>
+            </section>
+
+            <section id="color" class="main-section">
+                <header>color</header>
+                <p>When we want to change the color of the text, we could use this style property: <em>color</em>.</p>
+                <p>1st example:</p>
+                <code>
+                    <p class="code_p">color: red</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result1_1" class="code_p result_sum">Hello World</p>
+                </code>
+                <p>2nd example:</p>
+                <code>
+                    <p class="code_p">color: blue</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result1_2" class="code_p result_sum">Hello World</p>
+                </code>
+            </section>
+            
+            <section id="font-size" class="main-section">
+                <header>font-size</header>
+                <p>When we want to change the size of the text, we could use this style property: <em>font-size</em>.</p>
+                <p>1st example:</p>
+                <code>
+                    <p class="code_p">font-size: 15px</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result2_1" class="code_p result_sum">Hello World</p>
+                </code>
+                <p>2nd example:</p>
+                <code>
+                    <p class="code_p">font-size: 25px</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result2_2" class="code_p result_sum">Hello World</p>
+                </code>
+            </section>
+
+            <section id="font-family" class="main-section">
+                <header>font-family</header>
+                <p>When we want to change the font for the text, we could use this style property: <em>font-family</em>.</p>
+                <p>1st example:</p>
+                <code>
+                    <p class="code_p">font-family: monotype corsiva</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result3_1" class="code_p result_sum">Hello World</p>
+                </code>
+                <p>2nd example:</p>
+                <code>
+                    <p class="code_p">font-family: forte</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result3_2" class="code_p result_sum">Hello World</p>
+                </code>
+            </section>
+
+            <section id="font-weight" class="main-section">
+                <header>font-weight</header>
+                <p>When we want to make the text looks bold, we could use this style property: <em>font-weight</em>.</p>
+                <p>1st example:</p>
+                <code>
+                    <p class="code_p">font-weight: 300</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result4_1" class="code_p result_sum">Hello World</p>
+                </code>
+                <p>2nd example:</p>
+                <code>
+                    <p class="code_p">font-weight: 900</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result4_2" class="code_p result_sum">Hello World</p>
+                </code>
+            </section>
+
+            <section id="text-transform" class="main-section">
+                <header>text-transform</header>
+                <p>When we want to change the appearance of the text, we could use this style property: <em>text-transform</em>.</p>
+                <p>1st example:</p>
+                <code>
+                    <p class="code_p">text-transform: lowercase</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result5_1" class="code_p result_sum">Hello World</p>
+                </code>
+                <p>2nd example:</p>
+                <code>
+                    <p class="code_p">text-transform: uppercase</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result5_2" class="code_p result_sum">Hello World</p>
+                </code>
+                <p>3rd example:</p>
+                <code>
+                    <p class="code_p">text-transform: capitalize</p>
+                    <p class="code_p result_sum">Result:</p>
+                    <p id="result5_3" class="code_p result_sum">Hello World</p>
+                </code>
+            </section>
+
+            <section id="Reference" class="main-section">
+                <header>Reference</header>
+                <p>All the information in this page is taken from <a href="https://www.freecodecamp.org/learn/" target="_blank">here</a>.</p>
+            </section>
+        </main>
+    </body>
+</html>
